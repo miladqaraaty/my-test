@@ -1,0 +1,122 @@
+.bg-top-nav {
+  background: linear-gradient(320deg, #34495E, #0F1C28);
+}
+.top-nav {
+  padding-right: 3rem;
+}
+.bg-top-nav nav a {
+  color: white;
+  font-size: 0.9rem;
+  border-left: 1px solid #ffeeee25;
+}
+
+.shopping a::after {
+  vertical-align: 2px;
+  margin-right: 0px;
+}
+
+.shopping:hover a.border-0 {
+  color: rgb(184, 250, 228);
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.fa-cart-shopping {
+  vertical-align: -2px;
+}
+
+div.shopping ul img {
+  width: 64px;
+  height: 64px;
+}
+
+div.shopping ul a {
+  min-width: max-content;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+div.shopping ul a:hover {
+  background-color: #bcd6ed;
+  cursor: auto;
+}
+div.shopping a i {
+  color: #FFC107;
+}
+
+div.shopping ul a ul li:hover {
+  cursor: pointer;
+}
+.container .ulrtl {
+  text-align: right;
+  border-radius: 0;
+  background-color: #d9e0e6f5;
+  
+}
+.ulrtl li a {
+  color: #fff;
+}
+.ulrtl li a:hover {
+  color: #fff!important;
+  background-color:#FF9800!important;
+}
+.navbar a,button {
+  border: 0!important;
+}
+.navbar ul li.nav-item:hover a.nav-link {
+  font-size: 17px;
+  color: rgb(123, 212, 212);
+  transition: .3s;
+}
+.navbar a.dropdown-item:hover {
+  color: rgb(33, 168, 168);
+  background-color: #d9e0e6f5;
+  width: 100%;
+  transition: 0.2s;
+  padding-right: 1.5rem;
+}
+.navbar ul.ulrtl a i {
+  vertical-align: -3px;
+  margin-left: 5px;
+  color: rgb(0, 132, 255);
+}
+.pos-unset {
+  position: unset;
+}
+.navbar .position-absulote {
+  background-color: #FFC107;
+  top: 67px;
+}
+nav.navbar ul.position-absulote img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 12rem;
+}
+.navbar .text-warning {
+  min-width:max-content ;
+}
+
+
+
+  @media only screen and (max-width: 576px) {
+    .mt-sm-2 {
+    margin-top: 2rem !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav.navbar ul.ulrtl img {
+        max-width: 8rem;
+        position:absolute;
+        top: 9rem;
+        left: 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    nav.navbar ul.ulrtl img.bott {
+        top: 11rem;
+    }
+}

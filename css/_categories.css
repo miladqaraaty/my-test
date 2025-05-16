@@ -1,0 +1,23 @@
+
+a.wrapper-cats img {
+    width: 90px;
+    height: fit-content;
+    margin-right: .5rem;
+
+}
+.wrapper-p p {
+    margin: 0;
+    color: #d4af37;
+}
+.wrapper-cats {
+    background-color: #1c1c1c;
+    opacity: 0.9;
+    transition: all .3s ease;
+    border-radius: 8px;
+}
+.wrapper-cats:hover {
+  transform: translateY(-5px); /* حرکت رو به بالا هنگام هاور */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4), 0px 4px 8px rgba(255, 255, 255, 0.2);
+  background-color: #4169e1;
+  transform: scale(1.05); /* افکت بزرگنمایی نرم */
+}

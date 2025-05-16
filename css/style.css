@@ -1,0 +1,129 @@
+@import url(_top-nav.css);
+@import url(_slider.css);
+@import url(_shipping.css);
+@import url(_categories.css);
+@import url(_special-offers.css);
+@font-face {
+  font-family: IranNastaliq;
+  src: url(../fonts/IranNastaliq.ttf) format(ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: BBaran;
+  src: url(../fonts/BBaran.ttf) format(ttf),
+    url(../fonts/BBaran.woff) format(woff), url(../fonts/BBaran.eot) format(eot);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: BEsfehanbold;
+  src: url(../fonts/BEsfehanBold.ttf) format(ttf),
+    url(../fonts/BEsfehanBold.woff) format(woff), url(../fonts/BEsfehanBold.eot) format(eot);
+  font-weight: 700;
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+    font-family: BBaran;
+    direction: rtl;
+    transition: all 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.fs-16 {
+  font-size: 0.9rem;
+}
+
+.vertical-after::after {
+    vertical-align: 2px;
+    margin-right: 4px;
+}
+
+.vertical-0::after {
+  vertical-align: 0;
+  margin-right: 4px;
+}
+
+.border-radius-none {
+  border-radius: 0;
+}
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1320px;
+    }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 100%
+  }
+}
+.scroll-down-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.scroll-down-btn:hover {
+  background-color: #0056b3;
+}
+
+.arrow-down {
+  display: inline-block;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* تغییر از right به left */
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.scroll-top-btn:hover {
+  background-color: #0056b3;
+}
+
+.arrow-up {
+  display: inline-block;
+}

@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap - project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- start top nav -->
+
+    <div class="container-fluid bg-top-nav text-white">
+      <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-5 col-lg-5 top-nav d-none d-md-block">
+            ارسال رایگان + ضمانت مرجوع کالا و بازگشت وجه تا 30 روز
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <nav class="nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                >آدرس فروشگاه</a
+              >
+              <a class="nav-link" href="#">پیگیری سفارش</a>
+              <a class="nav-link" href="#">تلفن : 02123456789</a>
+              <div class="col-lg-5 top-nav border-0 d-none d-xl-block">
+                <a class="nav-link border-0">آدرس اینترنتی</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row my-5 align-items-center">
+          <div class="d-none col-md-2 d-md-flex">
+            <img
+              src="../img/infinity symbol 2 copy.jpg"
+              alt="لوگو"
+              class="w-100"
+              style="border-radius: 20%"
+            />
+          </div>
+          <div class="col-9 col-sm-9 col-md-7">
+            <div class="input-group">
+              <button
+                class="btn btn-secondary dropdown-toggle vertical-after border-radius-none"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                دسته بندی ها
+              </button>
+              <ul class="dropdown-menu ulrtl">
+                <li><a class="dropdown-item" href="#">موبایل</a></li>
+                <li><a class="dropdown-item" href="#">کامپیوتر</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">لوازم خانگی</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">لوازم جانبی</a></li>
+              </ul>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Text input with dropdown button"
+              />
+              <button
+                class="btn btn-danger border-radius-none"
+                type="button"
+                id="button-addon1"
+              >
+                جستجو
+              </button>
+            </div>
+          </div>
+          <div class="col-3 col-md-2">
+            <div class="dropdown shopping">
+              <a
+                class="btn btn-secondary dropdown-toggle border-0 bg-transparent"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="fa-solid fa-cart-shopping px-2"></i>خرید
+              </a>
+              <ul class="dropdown-menu">
+                <a class="dropdown-item d-flex justify-content-around" href="#">
+                  <img
+                    class="img-thumbnail"
+                    src="../img/تصویر با کیفیت انواع گوشی موبایل-small-1000-logo.png"
+                    alt="تلفن همراه"
+                  />
+                  <ul>
+                    <li>آیفون 15 پرو</li>
+                    <li>1000$</li>
+                    <li>مشخصات</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-close align-self-center"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </a>
+                <a class="dropdown-item d-flex justify-content-around" href="#">
+                  <img
+                    class="img-thumbnail"
+                    src="../img/لوازم خانگی.png"
+                    alt="لوازم خانگی"
+                  />
+                  <ul>
+                    <li>لواز م خانگی</li>
+                    <li>200$</li>
+                    <li>مشخصات</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-close align-self-center"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </a>
+                <a class="dropdown-item d-flex justify-content-around" href="#">
+                  <img
+                    class="img-thumbnail"
+                    src="../img/دیجیتال 2.png"
+                    alt="سیستم کامپیوتر گیمینگ"
+                  />
+                  <ul>
+                    <li>سیستم کامپیوتر گیمینگ</li>
+                    <li>2500$</li>
+                    <li>مشخصات</li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-close align-self-center"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of top nav -->
+
+      <!-- start navbar -->
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <div class="container-fluid position-relative">
+            <a class="navbar-brand" href="#"
+              ><img
+                src="../img/infinity symbol 2 copy.jpg"
+                width="64px"
+                height="50px"
+                alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >خانه</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown pos-unset">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    لوازم خانگی
+                  </a>
+                  <ul class="dropdown-menu position-absulote w-100 ulrtl">
+                    <img src="../img/لوازم خانگی.png" alt="" />
+                    <div class="conatainer">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              اول</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              دوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              سوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              چهارم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              پنجم</a
+                            >
+                          </li>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              اول</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              دوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              سوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              چهارم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              پنجم</a
+                            >
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown pos-unset">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    لوازم صوتی تصویری
+                  </a>
+                  <ul
+                    class="dropdown-menu ulrtl position-absulote w-100 border-0 shadow"
+                  >
+                    <img src="../img/دیجیتال 2.png" class="bott" alt="" />
+                    <div class="conatainer">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              اول</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              دوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              سوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              چهارم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              پنجم</a
+                            >
+                          </li>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              اول</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              دوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              سوم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              چهارم</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fa-solid fa-angle-left"></i> محصول
+                              پنجم</a
+                            >
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ارتباط با ما</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">درباره ما</a>
+                </li>
+              </ul>
+              <a href="#" class="text-decoration-none text-warning"
+                >**محصولات عیدانه**</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- end of navbar -->
+    </div>
+
+    <!-- start slider -->
+
+    <button id="scrollDownBtn" class="scroll-down-btn">
+      <i class="fas fa-arrow-down"></i>
+    </button>
+    <button id="scrollTopBtn" class="scroll-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="container-fluid">
+      <div class="container container-slider my-5 ps-0">
+        <div class="row">
+          <!-- بخش اسلایدر -->
+          <div
+            class="col-sm-12 col-md-8 col-lg-7 d-flex align-items-stretch mb-5 mb-md-0 ps-sm-4 ps-md-0"
+          >
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide carousel-fade w-100"
+            >
+              <!-- محتوای اسلایدر -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img
+                    src="../img/khaanegi copy.jpg"
+                    class="d-block w-100 h-100"
+                    alt="لوازم خانگی"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block text-black mb-0"
+                  >
+                    <h5>عرضه انواع لوازم خانگی</h5>
+                    <p>فروش لوازم خانگی با نازل ترین قیمت بازار.</p>
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <img
+                    src="../img/digital copy.jpg"
+                    class="d-block w-100 h-100"
+                    alt="لوازم دیجیتال"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block text-black mb-0"
+                  >
+                    <h5>عرضه انواع لوازم دیجیتال</h5>
+                    <p>فروش لوازم دیجیتال با نازل ترین قیمت بازار.</p>
+                  </div>
+                </div>
+                <div class="carousel-item h-100">
+                  <img
+                    src="../img/mobile copy.jpg"
+                    class="d-block w-100 h-100"
+                    alt="انواع گوشی"
+                  />
+                  <div
+                    class="carousel-caption d-none d-md-block text-black mb-0"
+                  >
+                    <h5>عرضه انواع موبایل</h5>
+                    <p>فروش انواع موبایل با نازل ترین قیمت بازار.</p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-5 custom-col-25">
+            <div class="row h-100 w-100">
+              <div class="col-6">
+                <a href="#"
+                  ><img
+                    src="../img/001 گل.jpeg"
+                    alt="گل"
+                    class="img-fluid w-100 h-100"
+                    style="object-fit: fill"
+                /></a>
+              </div>
+              <div class="col-6 d-flex flex-column p-0">
+                <div class="mb-2 flex-grow-1">
+                  <a href="#"
+                    ><img
+                      src="../img/002 دختر.jpeg"
+                      alt="دختر"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: fill"
+                  /></a>
+                </div>
+                <div class="flex-grow-1">
+                  <a href="#"
+                    ><img
+                      src="../img/003 فرشته.jpeg"
+                      alt="فرشته"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: fill"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="custom-hr" />
+
+    <!-- end of slider -->
+
+    <!-- start shipping -->
+
+    <div class="container">
+      <div class="my-bg my-5 w-100">
+        <div class="row w-100 me-2 shipping">
+          <div class="col-6 col-md-4 mb-5 me-lg-4 me-xl-5 col-lg-2">
+            <div class="d-flex w-100">
+              <i class="fa-solid fa-truck-fast custom-shipp"></i>
+              <p class="">ارسال رایگان</p>
+            </div>
+            <p class="p-go-left w-100">به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-4 mb-5 me-lg-4 col-lg-2">
+            <div class="d-flex w-100">
+              <i class="fa-solid fa-home custom-shipp"></i>
+              <p class="">ارسال رایگان</p>
+            </div>
+            <p class="p-go-left w-100">به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-4 mb-5 me-lg-4 col-lg-2">
+            <div class="d-flex w-100">
+              <i class="fa-solid fa-car custom-shipp"></i>
+              <p class="">ارسال رایگان</p>
+            </div>
+            <p class="p-go-left w-100">به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-4 mb-5 me-lg-4 col-lg-2">
+            <div class="d-flex w-100">
+              <i class="fa-solid fa-cart-shopping custom-shipp"></i>
+              <p class="">ارسال رایگان</p>
+            </div>
+            <p class="p-go-left w-100">به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-4 mb-5 me-lg-4 col-lg-2">
+            <div class="d-flex w-100">
+              <i class="fa-solid fa-person custom-shipp"></i>
+              <p class="">ارسال رایگان</p>
+            </div>
+            <p class="p-go-left w-100 ms-2">به تمام نقاط کشور</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-bg">
+        <div class="row w-100 me-2 me-md-0">
+          <div class="col-6 col-md-2 me-md-5">
+            <i class="fa-solid fa-truck-fast custom-shipp shipp2"></i>
+            <p class="d-inline">ارسال رایگان</p>
+            <p>به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fa-solid fa-home custom-shipp shipp2"></i>
+            <p class="d-inline white-space-nowrap">ارسال رایگان</p>
+            <p>به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fa-solid fa-car custom-shipp shipp2"></i>
+            <p class="d-inline">ارسال رایگان</p>
+            <p>به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fa-solid fa-cart-shopping custom-shipp shipp2"></i>
+            <p class="d-inline">ارسال رایگان</p>
+            <p>به تمام نقاط کشور</p>
+          </div>
+          <div class="col-6 col-md-2">
+            <i class="fa-solid fa-person custom-shipp shipp2"></i>
+            <p class="d-inline">ارسال رایگان</p>
+            <p>به تمام نقاط کشور</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="row ads">
+        <div class="col-12 col-md-3 mb-3 wrapper-ads">
+          <img src="../img/ads-1.jpg" alt="تبلیغ 1" />
+        </div>
+        <div class="col-12 col-md-6 mb-3 wrapper-ads">
+          <img src="../img/ads-2.png" alt="تبلیغ 2" />
+        </div>
+        <div class="col-12 col-md-3 mb-3 wrapper-ads">
+          <img src="../img/ads-3.jpg" alt="تبلیغ 3" />
+        </div>
+      </div>
+    </div>
+    <hr class="custom-hr" />
+    <!-- end of shipping -->
+
+    <!-- start categories -->
+    <section class="container my-5">
+      <div class="row g-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p text-center">
+              <p class="text-center">انواع قلیان</p>
+              <p class="text-center">112 محصول</p>
+            </div>
+            <img
+              src="../img/categories/قلیان.jpg"
+              alt="قلیان"
+              class="img-fluid ms-2"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">ماشین حساب</p>
+              <p class="text-center">107 محصول</p>
+            </div>
+            <img
+              src="../img/categories/ماشین حساب.jpeg"
+              alt="ماشین حساب"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">لوازم یدکی</p>
+              <p class="text-center">28 محصول</p>
+            </div>
+            <img
+              src="../img/categories/لوازم یدکی.jpg"
+              alt="لوازم یدکی"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p text-center">
+              <p class="text-center">انواع ابزار</p>
+              <p class="text-center">86 محصول</p>
+            </div>
+            <img
+              src="../img/categories/ads-1.png"
+              alt="ابزار"
+              class="img-fluid ms-2"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">دوربین عکاسی</p>
+              <p class="text-center">67 محصول</p>
+            </div>
+            <img
+              src="../img/categories/ads-2.png"
+              alt="دوربین عکاسی"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">انواع شامپو</p>
+              <p class="text-center">36 محصول</p>
+            </div>
+            <img
+              src="../img/categories/ads-3.jpg"
+              alt="شامپو"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p text-center">
+              <p class="text-center">وسایل دیجیتال</p>
+              <p class="text-center">50 محصول</p>
+            </div>
+            <img
+              src="../img/categories/digital copy.jpg"
+              alt="دیجیتال"
+              class="img-fluid ms-2"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">اسلحه</p>
+              <p class="text-center">14 محصول</p>
+            </div>
+            <img
+              src="../img/categories/guns.png"
+              alt="اسلحه"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">انواع موبایل</p>
+              <p class="text-center">98 محصول</p>
+            </div>
+            <img
+              src="../img/categories/mobile copy.jpg"
+              alt="گوهی های هوشمند"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p text-center">
+              <p class="text-center">اسباب بازی</p>
+              <p class="text-center">51 محصول</p>
+            </div>
+            <img
+              src="../img/categories/اسباب بازی.jpg"
+              alt="اسباب بازی"
+              class="img-fluid ms-2"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">ظروف آشپزخانه</p>
+              <p class="text-center">22 محصول</p>
+            </div>
+            <img
+              src="../img/categories/ظروف.jpg"
+              alt="ظروف آشپزیخانه"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-2">
+          <a
+            href="#"
+            class="wrapper-cats d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <div class="wrapper-p">
+              <p class="text-center">لوازم خانگی</p>
+              <p class="text-center">17 محصول</p>
+            </div>
+            <img
+              src="../img/categories/لوازم خانگی.png"
+              alt="لوازم خانگی"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <hr class="custom-hr" />
+    <!-- end of categories -->
+
+    <!-- start special-offers -->
+    <section class="container">
+      <div class="row">
+        <div class="top-offers mb-4">
+          <span class="special-offer-title">پیشنهادات ویژه</span>
+        </div>
+        <nav>
+          <div class="nav nav-tabs border-0 mt-2" id="nav-tab" role="tablist">
+            <button
+              class="nav-link-offers"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              مد و پوشاک
+            </button>
+            <button
+              class="nav-link-offers"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              موبایل
+            </button>
+            <button
+              class="nav-link-offers"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              لپ تاپ
+            </button>
+            <button
+              class="nav-link-offers"
+              id="nav-disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-disabled"
+              type="button"
+              role="tab"
+              aria-controls="nav-disabled"
+              aria-selected="false"
+            >
+              ظروف آشپزخانه
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content mt-3 pe-1 special-offers" id="nav-tabContent">
+          <div
+            class="tab-pane fade"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="container">
+                <div class="row mt-3">
+                  <div class="row col-12 col-xl-6 offer-over box-left-off">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/shirt1.jpeg"
+                        alt="لباس"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/shirt2.jpeg"
+                        alt="لباس"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >پیراهن های مردانه مدیوم و لارج</a
+                      ><br />
+                      <s class="product-price">1,200,000 تومان</s>
+                      <p class="product-price">800,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row col-12 col-xl-6 offer-over">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/pants1.jpg"
+                        alt="لباس"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/pants2.jpg"
+                        alt="لباس"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >شلوار های مردانه مدیوم و لارج</a
+                      ><br />
+                      <s class="product-price">1,200,000 تومان</s>
+                      <p class="product-price">800,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div class="container">
+                <div class="row mt-4">
+                  <div class="row col-12 col-xl-6 offer-over box-left-off">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/phone1.jpg"
+                        alt="موبایل"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/phone2.jpg"
+                        alt="موبایل"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >گوشی موبایل سامسونگ a55</a
+                      ><br />
+                      <s class="product-price">30,000,000 تومان</s>
+                      <p class="product-price">27,000,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row col-12 col-xl-6 offer-over">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/phone3.jpg"
+                        alt="موبایل"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/phone4.jpg"
+                        alt="موبایل"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >گوشی موبایل گلکسی s24 ultra</a
+                      ><br />
+                      <s class="product-price">65,000,000 تومان</s>
+                      <p class="product-price">60,000,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <div class="container">
+                <div class="row mt-3">
+                  <div class="row col-12 col-xl-6 offer-over">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/leno1.jpg"
+                        alt="لپ تاپ"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/leno2.jpg"
+                        alt="لپ تاپ"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7 mt-3">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >لپ تاپ لنوو مدل l3500</a
+                      ><br />
+                      <s class="product-price">56,000,000 تومان</s>
+                      <p class="product-price">50,000,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row col-12 col-xl-6 offer-over">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/assus1.jpg"
+                        alt="ایسوس"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/assus2.jpg"
+                        alt="ایسوس"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7 mt-4">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >لپ تاپ ایسوس core i7</a
+                      ><br />
+                      <s class="product-price">75,000,000 تومان</s>
+                      <p class="product-price">68,000,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-disabled"
+            role="tabpanel"
+            aria-labelledby="nav-disabled-tab"
+            tabindex="0"
+          >
+            <div class="container">
+                <div class="row">
+                  <div class="row col-12 col-xl-6 offer-over mt-3">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/dish1.jpg"
+                        alt="ظروف"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/dish2.jpg"
+                        alt="ظروف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >ظروف آشپزخانه اول</a
+                      ><br />
+                      <s class="product-price">1,200,000 تومان</s>
+                      <p class="product-price">800,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row col-12 col-xl-6 offer-over mt-3">
+                    <div class="col-10 col-sm-6 col-lg-4 col-xl-5">
+                    <div class="offer-image-shirt">
+                      <img
+                        class=" shirt1 t-shirt"
+                        src="../img/پیشنهادات ویژه/dish3.jpg"
+                        alt="ظروف"
+                      />
+                      <img
+                        class=" shirt2 t-shirt"
+                        src="../img/پیشنهادات ویژه/dish4.jpg"
+                        alt="ظروف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-xl-7">
+                    <div>
+                      <a href="#" class="product-name expired"
+                        >ظروف آشپزخانه دوم</a
+                      ><br />
+                      <s class="product-price">1,200,000 تومان</s>
+                      <p class="product-price">800,000 تومان</p>
+
+                      <div class="product-rating">
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rating-value">
+                          star_rate
+                        </span>
+                        <span class="material-icons rotatey-180 rating-value">
+                          star_half
+                        </span>
+                        <span class="material-icons stars"> star_border </span>
+                        <span class="material-icons stars"> star_border </span>
+                      </div>
+                      <div class="countdown-label">
+                        زمان باقی‌مانده تا پایان تخفیف!
+                        <button class="add-to-cart-btn">
+                          🛒 افزودن به سبد خرید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="countdown-box blink-pulse countdown" id="countdown">
+                        ۰۲:۴۵:۱۲
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end special-offers -->
+
+
+
+
+
+
+
+
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
+
+
+<!-- function startCountdown() {
+  const countdownElements = document.querySelectorAll(".countdown"); // تغییر به کلاس
+  const countdownLabels = document.querySelectorAll(".countdown-label");
+  const offerOverElements = document.querySelectorAll(".offer-over");
+  let timeLeft = 0 * 3600 + 0 * 60 + 3; // چند ثانیه برای تست
+
+  // اطمینان از وجود عناصر
+  if (
+    countdownElements.length === 0 ||
+    countdownLabels.length === 0 ||
+    offerOverElements.length === 0
+  ) {
+    console.error("عناصر مورد نظر پیدا نشدند!");
+    return;
+  }
+
+  const timer = setInterval(() => {
+    const hours = Math.floor(timeLeft / 3600)
+      .toString()
+      .padStart(2, "0");
+    const minutes = Math.floor((timeLeft % 3600) / 60)
+      .toString()
+      .padStart(2, "0");
+    const seconds = (timeLeft % 60).toString().padStart(2, "0");
+
+    // به روزرسانی تمام عناصر با کلاس countdown
+    countdownElements.forEach((countdownElement) => {
+      countdownElement.textContent = `${hours}:${minutes}:${seconds}`;
+
+      // تغییر رنگ در 30 ثانیه پایانی
+      if (timeLeft <= 10) {
+        countdownElement.style.color = "#ff0000";
+        countdownElement.style.animation = "blinkAndPulse 0.5s infinite";
+      }
+
+      if (timeLeft <= 0) {
+        countdownElement.textContent = "زمان به پایان رسیده!";
+        countdownElement.style.animation = "none";
+        countdownElement.classList.add("finished");
+      }
+    });
+
+    // به روزرسانی تمام عناصر با کلاس countdown-label
+    if (timeLeft <= 0) {
+      countdownLabels.forEach((label) => {
+        label.textContent = "";
+      });
+
+      // اعمال blur روی عناصر offer-over
+      offerOverElements.forEach((element) => {
+        let isCountdown = false;
+        countdownElements.forEach((countdownElement) => {
+          if (element === countdownElement) {
+            isCountdown = true;
+          }
+        });
+
+        if (!isCountdown) {
+          element.classList.add("blur-offer");
+          console.log("Blur applied to:", element);
+        }
+      });
+
+      // غیرفعال کردن لینک‌های با کلاس expired
+      const expiredLinks = document.querySelectorAll(
+        "div.special-offers a.expired"
+      );
+      expiredLinks.forEach((link) => {
+        link.removeAttribute("href");
+        link.style.cursor = "default";
+        link.onclick = (e) => e.preventDefault();
+      });
+    }
+
+    if (timeLeft > 0) {
+      timeLeft--;
+    } else {
+      clearInterval(timer);
+    }
+  }, 1000);
+}
+
+// اطمینان از لود کامل DOM
+document.addEventListener("DOMContentLoaded", startCountdown); -->

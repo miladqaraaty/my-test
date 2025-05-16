@@ -1,0 +1,328 @@
+.special-offer-title {
+  font-family: 'IranSans', 'Tahoma', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff4757; /* قرمز پرتقالی جذاب */
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  padding: 15px 0;
+  text-shadow: 0 2px 4px rgba(255, 71, 87, 0.3);
+  letter-spacing: 1px;
+}
+
+/* خط نورانی متحرک زیر عنوان */
+.special-offer-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #ff4757 20%, 
+    #ff6b81 50%, 
+    #ff4757 80%, 
+    transparent 100%);
+  border-radius: 4px;
+  animation: glowLine 2.5s infinite ease-in-out;
+}
+
+/* انیمیشن خط نورانی */
+@keyframes glowLine {
+  0% { opacity: 0.7; width: 100px; }
+  50% { opacity: 1; width: 180px; }
+  100% { opacity: 0.7; width: 100px; }
+}
+
+/* افکت جرقه‌ای دور عنوان */
+.special-offer-title::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 60px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 71, 87, 0.4) 0%,
+    transparent 70%
+  );
+  z-index: -1;
+  animation: pulseGlow 3s infinite;
+}
+
+/* انیمیشن نور پس‌زمینه */
+@keyframes pulseGlow {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0.3; }
+}
+
+.special-offer-title::after {
+  content: "✦";
+  position: absolute;
+  right: 10%;
+  top: -15px;
+  font-size: 1.2rem;
+  color: #ffd700;
+  animation: twinkle 1.5s infinite alternate;
+}
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.nav-link-offers { 
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a); /* گرادیان مشکی مات */
+  color: #d4af37; /* رنگ متن طلایی */
+  border: none; /* حذف حاشیه پیش‌فرض */
+  border-radius: 8px; /* گوشه‌های نرم‌تر */
+  margin: 5px; /* فاصله بین تب‌ها */
+  padding: 12px 24px; /* پدینگ مناسب برای اندازه لوکس */
+  text-transform: uppercase; /* بزرگ کردن حروف */
+  letter-spacing: 1px; /* فاصله بین حروف */
+  font-weight: 500; /* ضخامت متن */
+  box-shadow: inset 0px 2px 5px rgba(255, 255, 255, 0.1), 
+              0px 6px 12px rgba(0, 0, 0, 0.6); /* سایه داخلی و خارجی */
+  transition: all 0.4s ease; /* انیمیشن نرم */
+}
+
+/* حذف حالت هاور */
+.nav-link-offers:hover {
+  background: linear-gradient(145deg, #2f2f2f, #424242); /* گرادیان خاکستری تیره */
+  color: #ffdd57; /* طلایی روشن و براق */
+  transform: translateY(-4px); /* جلوه بلند شدن */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7), 
+         inset 0px 2px 5px rgba(255, 255, 255, 0.2); /* سایه برجسته‌تر */
+}
+
+/* حذف حالت فوکوس */
+.nav-link-offers:focus {
+  outline: none; /* حذف خط دور فوکوس */
+  box-shadow: 0px 0px 8px rgba(255, 215, 0, 0.9); /* سایه طلایی در فوکوس */
+}
+
+/* حذف حالت فعال (active) */
+.nav-link-offers.active {
+  background: linear-gradient(145deg, #d4af37, #ffd700); /* گرادیان طلایی براق */
+  color: #1c1c1c; /* رنگ متن مشکی */
+  font-weight: bold; /* برجسته کردن متن */
+  transform: translateY(-3px) scale(1.02); /* جلوه سه‌بعدی ظریف */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8), 
+              inset 0px 2px 5px rgba(255, 255, 255, 0.3); /* سایه عمیق‌تر */
+
+}
+
+.rotatey-180 {
+  transform: rotatey(180deg);
+}
+
+/* استایل کلی تب محصول */
+.product-tab {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* فونت مدرن */
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* عنوان محصول */
+.product-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+p.product-price {
+  color: #333;
+}
+
+/* مدل محصول */
+.product-model {
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* قیمت محصول */
+.product-price {
+  font-size: 20px;
+  font-weight: 800;
+  color: #e63946; /* رنگ قرمز جذاب */
+  margin-bottom: 15px;
+}
+
+/* امتیاز محصول (ستاره‌ها) */
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.product-rating .stars {
+  color: #ffc107; /* رنگ طلایی ستاره‌ها */
+  font-size: 25px;
+}
+
+.product-rating .rating-value {
+  font-size: 25px;
+  color: #666;
+}
+
+.countdown-box {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ff4757; /* رنگ قرمز جذاب */
+  background: #fff;
+  padding: 5px 0 30px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+  text-align: center;
+  display: inline-block;
+  margin:1rem 1rem 1rem 0;
+  border: 2px solid #ff4757;
+  max-width: 90%;
+}
+
+/* انیمیشن چشمک‌زن + تغییر اندازه */
+.blink-pulse {
+  animation: blinkAndPulse 1.5s infinite;
+}
+
+@keyframes blinkAndPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 71, 87, 0.6);
+  }
+}
+
+.countdown-label {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.offer-over {
+  transition: filter 0.3s ease; /* برای افکت نرم */
+  border-top: 10px 1px 10px 0px #554a269e;
+}
+
+.box-left-off {
+  
+}
+
+.offer-over.blurred {
+  position: relative;
+}
+
+.offer-over.blurred::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+/* استثناها */
+.offer-over.blurred .countdown {
+  position: relative;
+  z-index: 2;
+  filter: none !important;
+}
+
+.offer-over.blurred * {
+  cursor: default !important; /* کرسر معمولی برای همه فرزندان */
+}
+
+.offer-over.blurred .clickable {
+  cursor: pointer !important; /* کرسر فلش برای عناصر خاص */
+}
+
+.offer-over-image {
+  transform: none !important;
+  transition: none !important;
+}
+
+.blur-offer {
+  filter: blur(2px);
+  opacity: 0.7;
+  transition: filter 0.3s ease;
+}
+
+.add-to-cart-btn {
+  background: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.countdown.finished {
+  animation: none !important; /* غیرفعال کردن هرگونه انیمیشن */
+}
+
+.countdown::after {
+  position: absolute;
+  content: 'ثانیه دقیقه ساعت';
+  font-size: 20px;
+  color: #1c1c1c;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  word-spacing: 1.5rem;
+}
+/* برای نشان ندادن after */
+.countdown.finished::after {
+  display: none;
+  content: none;
+}
+
+.offer-image-shirt {
+  overflow: hidden;
+  height: 250px;
+}
+.t-shirt{
+  width: 250px;
+  height: 250px;
+  transition: all .5s ease-in;
+}
+.shirt2 {
+  display: hidden;
+}
+.offer-image-shirt:hover .t-shirt {
+  transform: translatey(-250px);
+}
+
+.o-r-box-shadow {
+  box-shadow: 0 0 1px 2px #949393;
+}
+
+
+
+
+
+
+/* @media screen and (max-width: 576px) {
+  
+} */
