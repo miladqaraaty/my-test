@@ -219,11 +219,7 @@ p.product-price {
 
 .offer-over {
   transition: filter 0.3s ease; /* برای افکت نرم */
-  border-top: 10px 1px 10px 0px #554a269e;
-}
-
-.box-left-off {
-  
+  box-shadow: 10px 0 10px -5px rgba(0, 0, 0, 0.5);
 }
 
 .offer-over.blurred {
@@ -318,11 +314,20 @@ p.product-price {
   box-shadow: 0 0 1px 2px #949393;
 }
 
+@media screen ans (max-width:576px) {
+  .special-offer-title {
+    font-size: 1.5rem;
+  font-weight: 700;
+  color: #791b23;
+  }
+  .special-offer-title::after {
+    background: linear-gradient(90deg, 
+      transparent 0%, 
+      #791b23 20%, 
+      #791b23 50%, 
+      #791b23 80%, 
+      transparent 100%);
+  }
+}
 
 
-
-
-
-/* @media screen and (max-width: 576px) {
-  
-} */

@@ -20,7 +20,7 @@ const toastList = [...toastElList].map(
 function startCountdown() {
   const countdownElements = document.querySelectorAll(".countdown");
   const offerOverElements = document.querySelectorAll(".offer-over");
-  let timeLeft = 0 * 3600 + 0 * 60 + 99915; // 02:45:12
+  let timeLeft = 0 * 3600 + 0 * 60 + 120; // 02:45:12
 
   const timer = setInterval(() => {
     const hours = Math.floor(timeLeft / 3600).toString().padStart(2, "0");
@@ -86,8 +86,10 @@ function startCountdown() {
     timeLeft--;
   }, 1000);
 }
-
 document.addEventListener("DOMContentLoaded", startCountdown);
+
+
+
 
 document.getElementById("scrollDownBtn").addEventListener("click", () => {
   window.scrollTo({
@@ -100,4 +102,33 @@ document.getElementById("scrollTopBtn").addEventListener("click", () => {
     top: 0, // اسکرول به ابتدای صفحه
     behavior: "smooth", // اثر نرم و روان
   });
+});
+
+
+
+$(".slider").slick({
+  // normal options...
+  infinite: false,
+
+  // the magic
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 300,
+      settings: "unslick", // destroys slick
+    },
+  ],
 });
