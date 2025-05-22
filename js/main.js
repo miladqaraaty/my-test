@@ -105,30 +105,14 @@ document.getElementById("scrollTopBtn").addEventListener("click", () => {
 });
 
 
+const carousel = document.getElementById("imageCarousel");
+const indicators = document.querySelectorAll(".custom-indicators button");
 
-$(".slider").slick({
-  // normal options...
-  infinite: false,
-
-  // the magic
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        infinite: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 300,
-      settings: "unslick", // destroys slick
-    },
-  ],
+carousel.addEventListener("slid.bs.carousel", function (e) {
+  const activeIndex = Array.from(
+    this.querySelectorAll(".carousel-item")
+  ).findIndex((item) => item.classList.contains("active"));
+  indicators.forEach((indicator, index) => {
+    indicator.classList.toggle("active", index === activeIndex);
+  });
 });

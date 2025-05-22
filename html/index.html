@@ -29,7 +29,10 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -1365,18 +1368,78 @@
         </div>
       </div>
     </section>
-    <!-- end special-offers -->
+    <br /><br /><br /><hr class="custom-hr"><br>
+    <!-- end of special-offers -->
 
-    <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-      <div><h3>1</h3></div>
-      <div><h3>2</h3></div>
-      <div><h3>3</h3></div>
-      <div><h3>4</h3></div>
-      <div><h3>5</h3></div>
-      <div><h3>6</h3></div>
-    </div>
-
-
+    <!-- start carousels -->
+    <div class="container carousel-container">
+      <h2 class="carousel-title">گالری تصاویر</h2>
+      
+      <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <!-- Group 1 -->
+              <div class="carousel-item">
+                  <div class="image-group row g-0">
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/assus1.jpg" class="d-block w-100" alt="تصویر 1">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/assus2.jpg" class="d-block w-100" alt="تصویر 2">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/leno1.jpg" class="d-block w-100" alt="تصویر 3">
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Group 2 -->
+              <div class="carousel-item active">
+                  <div class="image-group row g-0">
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/dish2.jpg" class="d-block w-100" alt="تصویر 4">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/dish3.jpg" class="d-block w-100" alt="تصویر 5">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/dish4.jpg" class="d-block w-100" alt="تصویر 6">
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Group 3 -->
+              <div class="carousel-item">
+                  <div class="image-group row g-0">
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/pants2.jpg" class="d-block w-100" alt="تصویر 7">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/shirt1.jpeg" class="d-block w-100" alt="تصویر 8">
+                      </div>
+                      <div class="col-md-4">
+                          <img src="../img/پیشنهادات ویژه/pants1.jpg" class="d-block w-100" alt="تصویر 9">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">قبلی</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">بعدی</span>
+          </button>
+          
+          <div class="custom-indicators">
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+          </div>
+      </div>
+  </div>
+    <!-- end of carousels -->
 
 
     <br /><br /><br /><br /><br /><br /><br />
@@ -1391,3 +1454,4 @@
     <script src="../js/main.js"></script>
   </body>
 </html>
+
